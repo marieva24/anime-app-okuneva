@@ -3,49 +3,82 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Okuneva Marina DWN3A PWA</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilo.css">
-    <link rel="manifest" href="manifest.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   </head>
   <body>
-    <main>
-      <div class="container offline-banner">
-      <h1 class="text-center alert-danger st-offline">Estoy Offline y el cache fallo!</h1>
-      </div>
-    </main>
-  </body>
-      <footer class="footer pt-3 pb-3 bg1">
-      <div class="container col-10 col-md-6 col-sm-8 m-auto my-1 ">
-                    <ul class="row text-center list-unstyled py-4">               
-                        <li class="col-4"><a class="btn-rss fb" target="_blank" href="https://www.facebook.com/">facebook</a>
-                        </li>
-                        <li class="col-4"><a class="btn-rss inst" target="_blank" href="https://www.instagram.com/">instagram</a>
-                        </li>
-                        <li class="col-4">
-                            <a class="btn-rss youtube" target="_blank" href="https://youtube.com/home">youtube</a>
-                        </li>
-                    </ul>
-      </div>
-      <details class="container text-center col-8 col-md-6 col-sm-8 m-auto my-1 ">
-        <div id="alumno" class="row m-auto my-1 text-center">
-        <summary class="container list-unstyled">Datos del alumno</summary>
-        
-            <ul class="container list-unstyled py-4">   
-                <li><strong>Alumno:</strong> Okuneva Marina</li>
-                <li><strong>Carrera:</strong> Diseño Web</li>
-                <li><strong>Materia:</strong> Aplicaciones Web Progresivas</li>
-                <li><strong>Profesor:</strong> Gonzalo Rubino</li>
-                <li><strong>Comisión:</strong> 3A; turno Noche</li>
-                <li><strong>2021 &copy;</strong></li>
-            </ul>
+      <div class="offline-banner">
+        <div class="row m-auto text-center alert-danger ">
+            <h2 class="col-12 m-0">Status: Offline!!!!</h2>
         </div>
-      </details>
-    </footer>
-    <script src="js/register-sw.js"></script>
-    <script src="js/animania.js"></script>
+      </div>
+      <header class="container-fluid bg1">
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark bg-bg1">
+        <a class="navbar-brand" href="index.html">
+            <h1>Animania</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+      <main class="juego">
+        <section class="container p-2 juego-cont">
+          <div class="row p-2 m-auto m-1">
+             <h2 class="col-12 mb-2 p-2">Whac a mole</h2>
+             <p class="col-12 p-2 m-auto instruction">nnnn</p>
+                 <div class="col-10">
+                   <h3>Your score: <span id="score">0</span></h3>
+                </div>
+                <div class="col-10">
+                    <h3>Time Left: <span id="time-left">60</span></h3>
+                </div>
+            <div class="col-10">
+                <div class="grid">
+                  <div class="square" id="1"></div>
+                  <div class="square" id="2"></div>
+                  <div class="square" id="3"></div>
+                  <div class="square" id="4"></div>
+                  <div class="square" id="5"></div>
+                  <div class="square" id="6"></div>
+                  <div class="square" id="7"></div>
+                  <div class="square" id="8"></div>
+                  <div class="square" id="9"></div>
+                </div>
+           </div>
+           </div>
+        </section>
+      </main>
+  </body>
+        <footer class="footer pt-3 pb-3 bg1">
+            <div class="container">
+                <div class="row text-center">
+                 <div id="alumno" class="col-12 text-center">
+                   <details class="m-auto my-1">
+                      <summary>Datos del alumno</summary>
+                    <ul class="list-unstyled py-4">
+                        <li><strong>Alumno:</strong> Okuneva Marina</li>
+                        <li><strong>Carrera:</strong> Diseño Web</li>
+                        <li><strong>Materia:</strong> Aplicaciones Web Progresivas</li>
+                        <li><strong>Profesor:</strong> Gonzalo Rubino</li>
+                        <li><strong>Comisión:</strong> 3A; turno Noche</li>
+                        <li><strong>2021 &copy;</strong></li>
+                    </ul>
+              </details>
+            </div>
+         </footer>
+    <script src="js/app.js"></script>
     <script src="js/jquery.slim.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery.slim.min.js"><\/script>')</script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </html>

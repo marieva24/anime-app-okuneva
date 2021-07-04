@@ -32,9 +32,10 @@ https://coolors.co/6f2dbd-a663cc-b298dc-b8d0eb-b9faf8
 #6f2dbd; #a663cc; #b298dc; rgba (178, 152, 220, 0.7)#b8d0eb; #b9faf8;*/ 
 :root {
     --violet: #6f2dbd;
+    --violettr: rgba(111, 45, 189, 0.7);
     --rosa: #a663cc;
     --lila:#b298dc;
-    --lilatr:rgba(178, 152, 220, 0.7);
+    --lilatr:rgba(178, 152, 220, 0.3);
     --blanco: #ffffff;
     --azul:#b9faf8;
     --gris: #282f3d;
@@ -53,6 +54,82 @@ h1, h2, h3 {
 	font-family: 'SuisseBold';
 	font-size: 1.8em;
     margin: 0.7em 0;
+}
+#result h2 {
+    color: #000000;
+    word-break: break-word;
+}
+#result img {
+    width: 100%;
+    height: 20em;
+}
+#result p{
+    word-break: break-word;
+}
+#result p .score{
+    color: var(--violet);
+}
+#result a{
+    color: var(--violet);
+    border-color: var(--blanco);
+    border-radius: 7px;
+    font-family: 'SuisseMed';
+    font-size: 1.1em;
+}
+.img-anime{
+    order: 1;
+}
+.animecard{
+    overflow: hidden;
+    border-radius: 0.875em;
+    box-shadow: 2px 2px 8px var(--violettr);
+}
+/*-----juego----*/
+.grid {
+    width: 606px;
+    height: 606px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    background-color: var(--blanco);
+    height: 200px;
+    width: 200px;
+    border: solid black 1px;
+}
+.mole {
+    background-image: url("../res/img/mole.jpg");
+    background-size: cover;
+}
+.juego{
+    min-height: 100vh;  
+    background-color: var(--lilatr);    
+    color:var(--gris);
+    font-family: 'SuisseReg';
+}
+.juego-cont h3, p{
+    font-size: 1.2em;
+}
+.instruction{
+    font-size: 1em;
+}
+/*-fin--de---juego----*/
+
+.logo{
+    background: url("../res/img/logo-anime.svg") no-repeat 65px left;
+    font-size: 2em;
+    height:4rem;
+    color:white; 
+    position: absolute;
+    width: 300px;
+    line-height: 4rem;
+}
+.navbar-collapse{
+    max-width: 570px;
+}
+.logo-link {
+  color: var(--blanco);
 }
 header {
     padding: 7px;
@@ -108,8 +185,9 @@ button:hover{
     background:var(--azul);
     color:var(--violet);
     border-color: var(--blanco);
-    font-style: bold;
-    font-size: 120%;
+    border-radius: 7px;
+    font-family: 'SuisseMed';
+    font-size: 1.3em;
 }
 footer {
     background-color: var(--azul);
@@ -124,7 +202,9 @@ body:not(.offline) .offline-banner {
 }
 .offline-banner{
     width:100%;
-
+}
+.offline-banner div h2{
+    margin:0;
 }
 .btn-rss {
     background-size: 100%;
@@ -148,22 +228,21 @@ body:not(.offline) .offline-banner {
     background-image: url(../res/img/icon/youtube.svg);
 }
 .bienvenido{
-    max-width: 500px;
+    max-width: 450px;
     background-color: var(--blanco);
-    border-radius: 7px;
+    border-radius: 8px;
     box-shadow: var(--violet);
-    shape-outside: 7px;
 }
 p{
     color: #000000;
-    font-size: 0.8em;
-}
-#result a{
-    color: var(--violet);
+    font-size: 0.9em;
 }
 .score{
     font-weight: bold;
 }
 .library{
     background-color: var(--lilatr);
+}
+details{
+    font-size: 0.7em;
 }

@@ -4,17 +4,16 @@ const cacheName = 'cache-version-1';
 // Archivos/Recursos que vamos a "cachear"
 const precache = [
   './favicon.ico',
-  './manifest.webmanifest',
   './index.html',
-  './anime.html',
   './offline.html',
   './css/estilo.css',
   './css/bootstrap.min.css',
   './css/bootstrap.min.css.map',
+  './js/app.js',
   './js/jquery.slim.min.js',
-  './js/animania.js',
   './js/bootstrap.bundle.min.js',
   './js/bootstrap.bundle.min.js.map',
+  './res/img/mole.jpg',
   './res/img/icon/youtube.svg',
   './res/img/icon/facebook.svg',
   './res/img/icon/instagram.svg',
@@ -39,7 +38,6 @@ const precache = [
   './res/fonts/SuisseIntl-Regular.woff',
   './res/fonts/SuisseIntl-Regular.ttf',
   './res/fonts/SuisseIntl-Regular.svg#SuisseIntl-Regular'
-
 ];
 
 

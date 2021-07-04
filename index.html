@@ -13,10 +13,10 @@
   <body>
     <div class="offline-banner">
     <div class="row m-auto text-center alert-danger ">
-      <h1 class="col-12 m-0">Status: Offline</h1>
+      <h2 class="col-12 m-0">Status: Offline</h2>
     </div>
     </div>
-    <header class="container-fluid bg1">
+<header class="container-fluid bg1">
       <!-- Fixed navbar -->
       <nav class="navbar navbar-expand-md navbar-dark bg-bg1">
         <a class="navbar-brand" href="index.html">
@@ -38,49 +38,51 @@
       </nav>
     </header>
     <main class="main">
-        
         <section class="container p-4">
-             <div class="row p-4 m-auto bienvenido">
-                <h2 class="col-12 mb-2 p-2 text-center">Bienvenido a Animania</h2>
-                <p class="col-10 p-2 m-auto">Nuestra aplicación ofrece una amplia selección de anime. Aquí vas a poder buscar todos los animes que te gustan. También vas a poder instalar la app en tu celular, tablet o pc.</p>
-                <div class="col-8 m-auto p-0"><a href="anime.html" id="buscar-home" class="d-block btn btn-primary btn-group-sm my-3 p-2">Buscar anime</a>
+             <div class="row p-2 m-auto m-1 bienvenido">
+              <div class="col-12">
+                <h2 class="mb-2 p-2">Bienvenido a Animania</h2>
+                <p class="p-2 m-auto">Nuestra aplicación ofrece una amplia selección de anime. Aquí vas a poder buscar todos los animes que te gustan. Instalá la app en tu celular, tablet o pc.</p>
+                <div class="col-6 m-auto p-0"><a href="anime.html" id="buscar-home" class="d-block btn btn-primary btn-group-sm my-3 p-2">Buscar anime</a>
                 </div>
              </div>
+              </div>
+              <div class="col-lg-8 col-xs-11 m-auto">
              <picture class="img-fluid p-2">            
-                        <source media="(max-width: 575px)" srcset="res/img/anime-homura-sm.png">
-                        <source media="(max-width: 767px)" srcset="res/img/anime-homura-md.png">
-                        <img class="d-block w-100 img-fluid" src="res/img/anime-homura-big.png" alt="Anime Homura">
-              </picture>
+                  <source media="(max-width: 575px)" srcset="res/img/anime-homura-sm.png">
+                  <source media="(max-width: 767px)" srcset="res/img/anime-homura-md.png">
+                  <img class="d-block w-100 img-fluid" src="res/img/anime-homura-big.png" alt="Anime Homura">
+             </picture>
+             </div>
       </section>
     </main>
     <footer class="footer pt-3 pb-3 bg1">
-      <div class="container col-10 col-md-6 col-sm-8 m-auto my-1 ">
-                    <ul class="row text-center list-unstyled py-4">               
-                        <li class="col-4"><a class="btn-rss fb" target="_blank" href="https://www.facebook.com/">facebook</a>
+          <div class="container">
+            <div class="row text-center">
+                    <ul class="col-10 m-auto list-unstyled py-4">               
+                        <li class="mx-3 d-inline-block"><a class="btn-rss fb m-1" target="_blank" href="https://www.facebook.com/">facebook</a>
                         </li>
-                        <li class="col-4"><a class="btn-rss inst" target="_blank" href="https://www.instagram.com/">instagram</a>
+                        <li class="mx-3 d-inline-block"><a class="btn-rss inst m-1" target="_blank" href="https://www.instagram.com/">instagram</a>
                         </li>
-                        <li class="col-4">
-                            <a class="btn-rss youtube" target="_blank" href="https://youtube.com/home">youtube</a>
+                        <li class="mx-3 d-inline-block">
+                            <a class="btn-rss youtube m-1" target="_blank" href="https://youtube.com/home">youtube</a>
                         </li>
-                    </ul>          
-      </div>
-
-      <details class="container text-center col-8 col-md-6 col-sm-8 m-auto my-1 ">
-        <div id="alumno" class="row m-auto my-1 text-center">
-        <summary class="container list-unstyled">Datos del alumno</summary>
+                    </ul>
+          <div id="alumno" class="col-12 text-center">
+            <details class="m-auto my-1">
+            <summary>Datos del alumno</summary>
         
-            <ul class="container list-unstyled py-4">   
-                <li><strong>Alumno:</strong> Okuneva Marina</li>
-                <li><strong>Carrera:</strong> Diseño Web</li>
-                <li><strong>Materia:</strong> Aplicaciones Web Progresivas</li>
-                <li><strong>Profesor:</strong> Gonzalo Rubino</li>
-                <li><strong>Comisión:</strong> 3A; turno Noche</li>
-                <li><strong>2021 &copy;</strong></li>
-            </ul>
+                  <ul class="list-unstyled py-4">   
+                      <li><strong>Alumno:</strong> Okuneva Marina</li>
+                      <li><strong>Carrera:</strong> Diseño Web</li>
+                      <li><strong>Materia:</strong> Aplicaciones Web Progresivas</li>
+                      <li><strong>Profesor:</strong> Gonzalo Rubino</li>
+                      <li><strong>Comisión:</strong> 3A; turno Noche</li>
+                      <li><strong>2021 &copy;</strong></li>
+                  </ul>
+            </details>
         </div>
-      </details>
-    
+        </div>
     </footer>
     <script src="js/jquery.slim.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
